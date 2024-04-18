@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title">
+            <img src="./calculator.jpg" alt="calculator">
+            <h1>Calculator)</h1>
+        </div>
+        <h2>JavaScript basics</h2>
+    </header>
+    <main>
+        <section class="calculator">
+            <div class="container">
+                <div class="btn btn1"></div>
+                <div class="btn btn2"></div>
+                <div class="btn btn3"></div>
+            </div>
+            <div class="bolts">
+                <div class="left"><i class="gg-bolt"></i></div>
+                <div class="right"><i class="gg-bolt"></i></div>
+                <div class="left"><i class="gg-bolt"></i></div>
+                <div class="right"><i class="gg-bolt"></i></div>
+            </div>
+            <div class="equation">
+                <input type="number" name="number a" id="a">
+                <select name="operator" id="operator">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="number" name="number b" id="b">
+            </div>
+            <div class="result">
+                <button class="equal-sign"><i class="gg-equal"></i></button>
+                <button class="clear"><i class="gg-clear"></i></button>
+                <span id="solution" class="solution" for=".equal-sign"></span>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <i class="fa fa-github-square github" id="github"></i>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
