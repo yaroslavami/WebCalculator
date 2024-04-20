@@ -3,7 +3,7 @@
 1. Choose your first number.
 2. Choose operator you need to use in the drop down menu
 3. Choose your second number
-4. Press the button "=" to calculete your equation.
+4. Press the button "=" to calculate your equation.
 ## Developer Info
 Developer was supposed to be done with that calculator 3 months ago, don't blame him.
 ### Extra Info
