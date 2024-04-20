@@ -31,116 +31,26 @@ header h2{
     font-size: 20px;
     color: #7d7c7c;
 }
-/* Bolt icons */
-.gg-bolt {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    width: 16px;
-    height: 16px;
-    border: 2px solid;
-    border-radius: 100%
+main{
+    display: flex;
+    justify-content: center;
+    margin: 15%;
 }
-
-.gg-bolt::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute;
-    width: 10px;
-    height: 2px;
-    background: currentColor;
-    border-radius: 5px;
-    transform: rotate(-45deg);
-    top: 5px;
-    left: 1px
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-/* 'Equal' sign icon */
-.gg-equal {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform:
-        rotate(-25deg) scale(var(--ggs, 1));
-    width: 24px;
-    height: 12px;
-    border: 2px solid;
-    border-radius: 22px
+.equal{
+    width: 40px;
+    padding: 1%;
+    margin: 5%;
+    background-color: rgb(196, 247, 247);
+    border: 1px solid greenyellow;
+    border-radius: 20px;
 }
-
-.gg-equal::after,
-.gg-equal::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute
-}
-
-.gg-equal::before {
-    width: 12px;
-    height: 10px;
-    top: -2px;
-    left: 4px;
-    border-left: 2px solid;
-    border-right: 2px solid
-}
-
-.gg-equal::after {
-    width: 2px;
-    height: 2px;
-    background: currentColor;
-    box-shadow:
-        0 4px 0,
-        4px 0 0,
-        4px 4px 0;
-    border-radius: 22px;
-    left: 7px;
-    top: 1px
-}
-
-/* Clear icon */
-.gg-clear {
-    box-sizing: border-box;
-    position: relative;
-    display: block;
-    transform: scale(var(--ggs, 1));
-    width: 10px;
-    height: 12px;
-    border: 2px solid transparent;
-    box-shadow:
-        0 0 0 2px,
-        inset -2px 0 0,
-        inset 2px 0 0;
-    border-bottom-left-radius: 1px;
-    border-bottom-right-radius: 1px;
-    margin-top: 4px
-}
-
-.gg-clear::after,
-.gg-clear::before {
-    content: "";
-    display: block;
-    box-sizing: border-box;
-    position: absolute
-}
-
-.gg-clear::after {
-    background: currentColor;
-    border-radius: 3px;
-    width: 16px;
-    height: 2px;
-    top: -4px;
-    left: -5px
-}
-
-.gg-clear::before {
-    width: 10px;
-    height: 4px;
-    border: 2px solid;
-    border-bottom: transparent;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    top: -7px;
-    left: -2px
+.solution {
+    margin: 3%;
+    padding: 1%;
 }

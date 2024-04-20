@@ -19,17 +19,6 @@
     </header>
     <main>
         <section class="calculator">
-            <div class="container">
-                <div class="btn btn1"></div>
-                <div class="btn btn2"></div>
-                <div class="btn btn3"></div>
-            </div>
-            <div class="bolts">
-                <div class="left"><i class="gg-bolt"></i></div>
-                <div class="right"><i class="gg-bolt"></i></div>
-                <div class="left"><i class="gg-bolt"></i></div>
-                <div class="right"><i class="gg-bolt"></i></div>
-            </div>
             <div class="equation">
                 <input type="number" name="number a" id="a">
                 <select name="operator" id="operator">
@@ -41,15 +30,11 @@
                 <input type="number" name="number b" id="b">
             </div>
             <div class="result">
-                <button class="equal-sign"><i class="gg-equal"></i></button>
-                <button class="clear"><i class="gg-clear"></i></button>
-                <span id="solution" class="solution" for=".equal-sign"></span>
+                <button class="equal" onclick="calculate()"> = </button>
+                <div id="solution" class="solution"></div>
             </div>
         </section>
     </main>
-    <footer>
-        <i class="fa fa-github-square github" id="github"></i>
-    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
