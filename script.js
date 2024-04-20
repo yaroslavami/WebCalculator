@@ -23,13 +23,11 @@ function calculate() {
         default:
             result = "Невідома операція";
     }
-    
-    if (isNaN(result))
-        alert("Помилка! Введіть коректні дані");
-    else
-        console.log(result);
-        document.querySelector("#solution").innerText = "Результат: " + result;
-    if (a + b == 0.1 + 0.2)
+    if ((a + b) === (0.1 + 0.2)) {
         console.log((0.1 + 0.2).toFixed(1));
         document.querySelector("#solution").innerText = "Результат: " + ((0.1 + 0.2).toFixed(1));
+    } else {
+        console.log(result);
+        document.querySelector("#solution").innerText = "Результат: " + result;
+    }
 }
