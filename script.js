@@ -26,6 +26,7 @@ function calculate() {
     if (isNaN(result))
         alert("Помилка! Введіть коректні дані");
     else  
+        console.log((0.1 + 0.2).toFixed(1)); // 0.3        
         console.log(result)
         document.querySelector("#solution").innerText = "Результат: " + result;
 }
